@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="An educational New Jersey divorce-ground screening guide with county Ombudsman contact information.">
+<title>New Jersey Divorce Pathway | Informational Guide</title>
+<style>
+:root{--navy:#17324d;--blue:#245b83;--teal:#2b7775;--ink:#243342;--muted:#627282;--paper:#f5f7fa;--line:#dce4eb;--white:#fff;--gold:#e9b85b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+header{background:linear-gradient(120deg,#17324d,#245b83);color:white;padding:28px 20px}
+.header-inner,main,footer{max-width:900px;margin:auto}.brand{font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;color:#c7d8e6;font-weight:bold}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.1;margin:12px 0}.lead{max-width:680px;color:#e4edf4;margin:0}
+main{padding:26px 18px 60px}.notice{background:#fff8e8;border:1px solid #f0d9a7;border-left:5px solid var(--gold);padding:14px 16px;border-radius:10px;margin-bottom:20px;font-size:.93rem}
+.progress-wrap{display:flex;align-items:center;gap:12px;margin:18px 0 22px}.progress{height:8px;background:#e0e7ed;border-radius:99px;overflow:hidden;flex:1}.progress span{display:block;height:100%;width:0;background:var(--teal);transition:width .25s}
+#stepCount{font-size:.83rem;color:var(--muted);white-space:nowrap}
+.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:clamp(20px,4vw,34px);box-shadow:0 8px 28px rgba(23,50,77,.06)}
+.eyebrow{color:var(--teal);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;font-weight:bold}
+h2{color:var(--navy);font-size:1.55rem;line-height:1.25;margin:8px 0 10px}
+.question{font-size:1.08rem;font-weight:600;margin:20px 0 12px}
+.hint{color:var(--muted);font-size:.92rem;margin:0 0 16px}
+.options{display:grid;gap:10px}.option{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);padding:13px 14px;border-radius:10px;cursor:pointer;transition:.15s;background:#fff}
+.option:hover{border-color:var(--teal);background:#f5fbfa}.option:has(input:checked){border-color:var(--teal);background:#eef8f6}
+.option input{margin-top:4px;accent-color:var(--teal);width:17px;height:17px;flex:0 0 auto}
+.actions{display:flex;justify-content:space-between;gap:12px;margin-top:26px;flex-wrap:wrap}
+button{border:0;border-radius:9px;padding:12px 20px;font-weight:bold;font-size:.96rem;cursor:pointer}
+.primary{background:var(--navy);color:#fff}.primary:hover{background:var(--blue)}.secondary{background:#edf1f5;color:var(--navy)}button:disabled{opacity:.45;cursor:not-allowed}
+.error{color:#a12b2b;font-size:.9rem;margin-top:10px;min-height:1.3em}
+.result-card{border:1px solid var(--line);border-radius:12px;padding:16px;margin:13px 0;background:#fbfcfd}
+.result-card h3{color:var(--navy);margin:0 0 6px;font-size:1.08rem}.tag{display:inline-block;background:#e7f3f1;color:#205e5b;padding:3px 8px;border-radius:99px;font-size:.75rem;font-weight:bold;margin-bottom:8px}
+.contact{background:#eef4f8;border-radius:12px;padding:18px;margin-top:18px}.contact p{margin:5px 0}
+a{color:#155c85}a:focus,button:focus,input:focus{outline:3px solid #f0c56d;outline-offset:2px}
+.small{font-size:.87rem;color:var(--muted)}.disclaimer{border-top:1px solid var(--line);margin-top:24px;padding-top:18px;font-size:.9rem}
+footer{padding:0 18px 35px;color:var(--muted);font-size:.83rem}
+@media(max-width:520px){header{padding:24px 18px}.actions button{flex:1}.panel{padding:20px 16px}}
+
+/* Guide chatbot */
+.chat-panel{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);box-shadow:0 8px 28px rgba(23,50,77,.06)}
+.chat-panel h2{margin-top:6px}.chat-intro{color:var(--muted);font-size:.93rem;margin:0 0 14px}
+.chat-log{height:330px;overflow-y:auto;border:1px solid var(--line);border-radius:12px;padding:14px;background:#f8fafc;display:flex;flex-direction:column;gap:12px}
+.chat-message{max-width:92%;padding:11px 13px;border-radius:12px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:.94rem}
+.chat-message.bot{align-self:flex-start;background:#fff;border:1px solid var(--line)}
+.chat-message.user{align-self:flex-end;background:#eaf3f8;color:var(--navy);border:1px solid #d3e2ec}
+.chat-cite{display:block;margin-top:8px;color:#496579;font-size:.82rem;font-weight:bold}
+.chat-warning{display:block;margin-top:7px;padding-top:7px;border-top:1px solid var(--line);font-size:.8rem;color:#6b5960}
+.chat-form{display:flex;gap:9px;margin-top:12px}.chat-form input{flex:1;min-width:0;border:1px solid #b9c7d2;border-radius:9px;padding:12px;font:inherit}
+.chat-suggestions{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}.chat-suggestions button{font-size:.82rem;padding:8px 11px}
+.chat-source{font-size:.84rem;color:var(--muted);margin:12px 0 0}
+@media(max-width:520px){.chat-form{flex-direction:column}.chat-form button{width:100%}.chat-log{height:360px}}
+
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+ <div class="brand">New Jersey · Self-help information</div>
+ <h1>Explore your divorce pathway</h1>
+ <p class="lead">A step-by-step, educational guide to New Jersey divorce grounds and the court office that can help you understand procedures.</p>
+</div></header>
+<main>
+<div class="notice"><strong>Important:</strong> This is an informational screening tool, not a legal eligibility decision. Your answers are not sent or saved. The court decides whether a ground is properly established. If you are in immediate danger, call 911 or contact a local domestic-violence service.</div>
+<div class="progress-wrap"><div class="progress" aria-label="Questionnaire progress"><span id="progressBar"></span></div><span id="stepCount">Step 1</span></div>
+<section class="panel" id="app" aria-live="polite"></section>
+
+<section class="chat-panel" aria-labelledby="chatTitle">
+ <div class="eyebrow">New Jersey divorce guide assistant</div>
+ <h2 id="chatTitle">Ask a question about divorce in NJ</h2>
+ <p class="chat-intro">Ask about filing, divorce grounds, serving papers, custody, support, property, court steps, or finding legal help. Answers are based on the Legal Services of New Jersey self-help guide and include its printed page number.</p>
+ <div id="chatLog" class="chat-log" role="log" aria-live="polite" aria-relevant="additions">
+  <div class="chat-message bot">Hello! I can help you find general information in the New Jersey divorce self-help guide. What would you like to know?
+   <span class="chat-cite">Source: Divorce in New Jersey: A Self-Help Guide, p. 1 (2019 edition).</span>
+   <span class="chat-warning">This is not legal advice. The guide says its information was current as of January 2019; check for updates.</span>
+  </div>
+ </div>
+ <form class="chat-form" id="chatForm">
+  <label for="chatQuestion" class="small" style="position:absolute;left:-10000px">Your divorce question</label>
+  <input id="chatQuestion" name="question" type="text" placeholder="Type your question…" autocomplete="off" required maxlength="600">
+  <button class="primary" type="submit">Send</button>
+ </form>
+ <div class="chat-suggestions" aria-label="Suggested questions">
+  <button type="button" class="secondary" data-question="What are the no-fault grounds for divorce?">Divorce grounds</button>
+  <button type="button" class="secondary" data-question="How do I file for divorce?">Filing</button>
+  <button type="button" class="secondary" data-question="How do I serve my spouse with papers?">Serving papers</button>
+  <button type="button" class="secondary" data-question="How is property divided?">Property</button>
+  <button type="button" class="secondary" data-question="How does child support work?">Child support</button>
+ </div>
+ <p class="chat-source">Reference guide: <a href="https://proxy.lsnj.org/rcenter/GetPublicDocument/Sites/LAW/Documents/Publications/Manuals/Divorce.pdf" target="_blank" rel="noopener">Divorce in New Jersey: A Self-Help Guide (Legal Services of New Jersey, 2019)</a>.</p>
+</section>
+
+</main>
+<footer>Information is based on New Jersey Statute N.J.S.A. 2A:34-2 and New Jersey Judiciary resources. Contact details can change; verify them with the <a href="https://www.njcourts.gov/courts/ombudsman" target="_blank" rel="noopener">NJ Courts Ombudsman directory</a>.</footer>
+<script>
+const offices = {
+"Atlantic":{region:"Atlantic/Cape May",phone:"609-402-0100 ext. 47230",email:"AtlcapeHelp.Mailbox@njcourts.gov",address:"Atlantic County Civil Courts Building, 1201 Bacharach Blvd., Atlantic City, NJ 08401",url:"https://www.njcourts.gov/courts/ombudsman/atlantic-cape-may"},
+"Cape May":{region:"Atlantic/Cape May",phone:"609-402-0100 ext. 47230",email:"AtlcapeHelp.Mailbox@njcourts.gov",address:"Cape May County Courthouse, 9 North Main Street, Cape May Court House, NJ 08210",url:"https://www.njcourts.gov/courts/ombudsman/atlantic-cape-may"},
+"Bergen":{region:"Bergen",phone:"201-221-0700 ext. 25103",email:"BergenHelp.Mailbox@njcourts.gov",address:"Bergen County Justice Center, 10 Main Street, Room 125, Hackensack, NJ 07601",url:"https://www.njcourts.gov/courts/ombudsman/bergen"},
+"Burlington":{region:"Burlington",phone:"609-288-9500 ext. 38118",email:"BurlingtonHelp.Mailbox@njcourts.gov",address:"Burlington County Court Facility, 49 Rancocas Road, Mount Holly, NJ 08060",url:"https://www.njcourts.gov/courts/ombudsman"},
+"Camden":{region:"Camden",phone:"856-650-9100 ext. 43090",email:"CamdenHelp.Mailbox@njcourts.gov",address:"Camden County Hall of Justice, 101 South 5th Street, Room 110B, Camden, NJ 08103",url:"https://www.njcourts.gov/courts/ombudsman/camden"},
+"Cumberland":{region:"Cumberland/Gloucester/Salem",phone:"856-878-5050 ext. 15159",email:"CumGloSalHelp.Mailbox@njcourts.gov",address:"Cumberland County Courthouse, 60 West Broad Street, Bridgeton, NJ 08302",url:"https://www.njcourts.gov/courts/ombudsman/cumberland-gloucester-salem"},
+"Gloucester":{region:"Cumberland/Gloucester/Salem",phone:"856-878-5050 ext. 15159",email:"CumGloSalHelp.Mailbox@njcourts.gov",address:"Cumberland County Courthouse, 60 West Broad Street, Bridgeton, NJ 08302. Contact the office about Gloucester County appointments.",url:"https://www.njcourts.gov/courts/ombudsman/cumberland-gloucester-salem"},
+"Salem":{region:"Cumberland/Gloucester/Salem",phone:"856-878-5050 ext. 15159",email:"CumGloSalHelp.Mailbox@njcourts.gov",address:"Cumberland County Courthouse, 60 West Broad Street, Bridgeton, NJ 08302. Contact the office about Salem County appointments.",url:"https://www.njcourts.gov/courts/ombudsman/cumberland-gloucester-salem"},
+"Essex":{region:"Essex",phone:"973-776-9300 ext. 56886",email:"EssexHelp.Mailbox@njcourts.gov",address:"Essex County Veterans Courthouse, 50 West Market Street, Room 132, Newark, NJ 07102",url:"https://www.njcourts.gov/courts/ombudsman"},
+"Hudson":{region:"Hudson",phone:"201-748-4400 ext. 60145",email:"HudsonHelp.Mailbox@njcourts.gov",address:"Hudson County Administration Building, 595 Newark Avenue, Room 102, Jersey City, NJ 07306",url:"https://www.njcourts.gov/courts/ombudsman/hudson"},
+"Hunterdon":{region:"Somerset/Hunterdon/Warren",phone:"908-332-7700 ext. 13240",email:"SomHunWrnHelp.Mailbox@njcourts.gov",address:"Somerset County Courthouse, 20 North Bridge Street, Somerville, NJ 08876. Contact the office for Hunterdon County service details.",url:"https://www.njcourts.gov/courts/ombudsman"},
+"Mercer":{region:"Mercer",phone:"609-571-4200 ext. 74205",email:"MercerHelp.Mailbox@njcourts.gov",address:"Mercer County Civil Courthouse, 175 South Broad Street, Trenton, NJ 08650-0068",url:"https://www.njcourts.gov/courts/ombudsman/mercer"},
+"Middlesex":{region:"Middlesex",phone:"732-645-4300 ext. 88748",email:"MiddlesexHelp.Mailbox@njcourts.gov",address:"Middlesex County Family Courthouse, 120 New Street, Room 300B, New Brunswick, NJ 08903",url:"https://www.njcourts.gov/courts/ombudsman/middlesex"},
+"Monmouth":{region:"Monmouth",phone:"732-358-8700 ext. 87260",email:"MonmouthHelp.Mailbox@njcourts.gov",address:"Monmouth County Courthouse, 71 Monument Street, West Wing, Room 106, Freehold, NJ 07728",url:"https://www.njcourts.gov/courts/ombudsman/monmouth"},
+"Morris":{region:"Morris/Sussex",phone:"862-397-5700 ext. 75160",email:"MRS-SSXHelp.Mailbox@njcourts.gov",address:"Morris County Administration and Records Building, 10 Court Street, Room AR105, Morristown, NJ 07963",url:"https://www.njcourts.gov/courts/ombudsman/morris-sussex"},
+"Sussex":{region:"Morris/Sussex",phone:"862-397-5700 ext. 75160",email:"MRS-SSXHelp.Mailbox@njcourts.gov",address:"Sussex County Judicial Center, 43-47 High Street, Newton, NJ 07860",url:"https://www.njcourts.gov/courts/ombudsman/morris-sussex"},
+"Ocean":{region:"Ocean",phone:"732-504-0700 ext. 64470",email:"OceanHelp.Mailbox@njcourts.gov",address:"Contact the Ocean County Court User Resource Center for its current office address.",url:"https://www.njcourts.gov/courts/ombudsman"},
+"Passaic":{region:"Passaic",phone:"973-653-2910 ext. 24032",email:"PassaicHelp.Mailbox@njcourts.gov",address:"Superior Court of New Jersey – Passaic, 71 Hamilton Street, Room 130, Paterson, NJ 07505",url:"https://www.njcourts.gov/courts/ombudsman/passaic"},
+"Somerset":{region:"Somerset/Hunterdon/Warren",phone:"908-332-7700 ext. 13240",email:"SomHunWrnHelp.Mailbox@njcourts.gov",address:"Somerset County Courthouse, 20 North Bridge Street, Somerville, NJ 08876",url:"https://www.njcourts.gov/courts/ombudsman"},
+"Union":{region:"Union",phone:"908-787-1650 ext. 22300",email:"UnionHelp.Mailbox@njcourts.gov",address:"Contact the Union County Court User Resource Center for its current office address.",url:"https://www.njcourts.gov/courts/ombudsman"},
+"Warren":{region:"Somerset/Hunterdon/Warren",phone:"908-332-7700 ext. 13240",email:"SomHunWrnHelp.Mailbox@njcourts.gov",address:"Somerset County Courthouse, 20 North Bridge Street, Somerville, NJ 08876. Contact the office for Warren County service details.",url:"https://www.njcourts.gov/courts/ombudsman"}
+};
+const counties=Object.keys(offices).sort();
+const questions=[
+{key:"nj",title:"New Jersey connection",q:"Have you or your spouse lived in New Jersey continuously for at least 12 months immediately before filing?",hint:"This is a general residency screening question. There can be exceptions depending on the ground and facts; do not treat a “No” as a final answer.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"]]},
+{key:"irrecon",title:"Relationship breakdown",q:"Have serious differences caused the marriage to break down for at least six months, with no reasonable prospect of reconciliation?",hint:"This is the statutory description of irreconcilable differences. You do not need to select a specific type of disagreement here.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"]]},
+{key:"separation",title:"Living separately",q:"Have you and your spouse lived in separate residences for at least 18 consecutive months, with no reasonable prospect of reconciliation?",hint:"The separation ground requires different habitations for the full consecutive period. Living in separate rooms in the same home is not the statutory wording.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"]]},
+{key:"desertion",title:"Desertion",q:"Did your spouse willfully and continuously desert you for at least 12 months?",hint:"The statute refers to willful and continued desertion for 12 or more months. The facts and proof matter.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"]]},
+{key:"cruelty",title:"Extreme cruelty",q:"Have you experienced physical or mental cruelty by your spouse that endangered your safety or health, or made continued cohabitation improper or unreasonable?",hint:"New Jersey law includes physical or mental cruelty. The statute generally requires waiting three months after the last alleged act before filing on this ground (with a statutory exception for counterclaims). If you are unsafe now, prioritize safety and emergency support.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"],["skip","Prefer not to answer"]]},
+{key:"adultery",title:"Adultery",q:"Do you believe your spouse engaged in adultery?",hint:"This is a sensitive, fact-specific ground. A belief alone does not establish the legal elements or proof required.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"],["skip","Prefer not to answer"]]},
+{key:"addiction",title:"Addiction or habitual drunkenness",q:"Has your spouse had voluntarily induced addiction to a narcotic drug, or habitual drunkenness, for at least 12 consecutive months after the marriage and immediately before filing?",hint:"The statute uses specific wording and time requirements. This screening answer is not a finding about a person's health or legal status.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"],["skip","Prefer not to answer"]]},
+{key:"institution",title:"Institutionalization",q:"Has your spouse been institutionalized for mental illness for at least 24 consecutive months after the marriage and immediately before filing?",hint:"This is a narrowly worded statutory ground. An ordinary diagnosis or treatment does not by itself answer this question.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"],["skip","Prefer not to answer"]]},
+{key:"imprisonment",title:"Imprisonment",q:"Has your spouse been imprisoned for at least 18 consecutive months after the marriage?",hint:"If your spouse has been released, the statute also addresses whether you resumed living together after the imprisonment.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"],["skip","Prefer not to answer"]]},
+{key:"deviant",title:"Non-consensual sexual conduct",q:"Did your spouse voluntarily engage in sexual conduct described by the statute as “deviant sexual conduct” without your consent?",hint:"The statutory term is technical and may require legal interpretation. You do not need to share details in this tool.",opts:[["yes","Yes"],["no","No"],["unsure","I'm not sure"],["skip","Prefer not to answer"]]},
+{key:"county",title:"Your New Jersey county",q:"Which county do you live in?",hint:"Choose your county to display the corresponding NJ Judiciary Ombudsman contact information.",opts:counties.map(c=>[c,c])}
+];
+let index=0;const answers={};
+const app=document.getElementById("app");
+function render(){
+ const q=questions[index];document.getElementById("stepCount").textContent=`Step ${index+1} of ${questions.length}`;
+ document.getElementById("progressBar").style.width=`${(index/questions.length)*100}%`;
+ const isCounty=q.key==="county";
+ app.innerHTML=`<div class="eyebrow">${q.title}</div><h2>${q.key==="county"?"Let’s find your local court contact": "A few questions to guide your next step"}</h2><div class="question">${q.q}</div><p class="hint">${q.hint}</p><div class="options" role="${isCounty?"radiogroup":"group"}">${q.opts.map(([v,l])=>`<label class="option"><input type="radio" name="${q.key}" value="${v}" ${answers[q.key]===v?"checked":""}><span>${l}</span></label>`).join("")}</div><div class="error" id="error" role="alert"></div><div class="actions"><button class="secondary" id="back" ${index===0?"disabled":""}>Back</button><button class="primary" id="next">${index===questions.length-1?"See my information":"Continue"}</button></div>`;
+ document.getElementById("back").onclick=()=>{if(index>0){index--;render()}};
+ document.getElementById("next").onclick=()=>{const selected=document.querySelector(`input[name="${q.key}"]:checked`);if(!selected){document.getElementById("error").textContent="Please choose an answer to continue.";return}answers[q.key]=selected.value;if(index<questions.length-1){index++;render()}else showResults()};
+}
+const groundInfo={
+irrecon:["Irreconcilable differences","The marriage has broken down for at least six months and there is no reasonable prospect of reconciliation."],
+separation:["Separation","The spouses lived separate and apart in different residences for at least 18 consecutive months, with no reasonable prospect of reconciliation."],
+desertion:["Willful and continued desertion","The spouse willfully and continuously deserted the other for at least 12 months."],
+cruelty:["Extreme cruelty","Physical or mental cruelty that endangers safety or health, or makes continued cohabitation improper or unreasonable. The statute includes a three-month waiting provision after the last alleged act for a complaint."],
+adultery:["Adultery","Adultery is listed as a statutory ground. The legal elements and evidence should be discussed with a qualified legal professional."],
+addiction:["Voluntarily induced addiction or habitual drunkenness","The statutory period is at least 12 consecutive months after marriage and immediately before filing."],
+institution:["Institutionalization for mental illness","The statutory period is at least 24 consecutive months after marriage and immediately before filing."],
+imprisonment:["Imprisonment","At least 18 consecutive months of imprisonment after marriage; if the spouse has been released before filing, the statute addresses whether the spouses resumed cohabitation."],
+deviant:["Deviant sexual conduct without consent","The statute lists voluntarily performed deviant sexual conduct by the defendant without the plaintiff’s consent. The term is technical and fact-specific."]
+};
+function showResults(){
+ document.getElementById("progressBar").style.width="100%";document.getElementById("stepCount").textContent="Your results";
+ const possible=Object.keys(groundInfo).filter(k=>answers[k]==="yes");
+ const unsure=Object.keys(groundInfo).filter(k=>answers[k]==="unsure");
+ const nj=answers.nj;const county=answers.county;const office=offices[county];
+ let html=`<div class="eyebrow">Your screening summary</div><h2>Grounds you may want to ask about</h2><p class="hint">This is a summary of the answers you selected—not a legal conclusion, eligibility determination, or recommendation about which ground to file.</p>`;
+ if(possible.length){html+=`<p><strong>Your “Yes” answers:</strong></p>`+possible.map(k=>`<div class="result-card"><span class="tag">Possible ground to discuss</span><h3>${groundInfo[k][0]}</h3><p>${groundInfo[k][1]}</p></div>`).join("")}
+ else html+=`<div class="result-card"><h3>No ground was identified from your “Yes” answers</h3><p>You may still have options, or you may need help understanding the questions. Contact the court resource office or a qualified attorney for guidance.</p></div>`;
+ if(unsure.length)html+=`<div class="result-card"><h3>Answers you marked “not sure”</h3><p>${unsure.map(k=>groundInfo[k][0]).join(", ")}. Ask a qualified legal professional whether the facts fit any statutory ground.</p></div>`;
+ html+=`<div class="result-card"><h3>New Jersey residency response</h3><p>${nj==="yes"?"You indicated that you or your spouse has lived in New Jersey continuously for at least 12 months before filing.":nj==="no"?"You indicated that neither you nor your spouse meets that 12-month period. Residency rules and exceptions can be complicated; ask about your specific circumstances.":"You are unsure about the residency period. Confirm this before taking next steps."}</p><p class="small">Residency requirements can depend on the ground asserted and other facts. This tool does not determine whether you meet them.</p></div>`;
+ html+=`<div class="contact"><span class="tag">Your county contact</span><h3>${county} County · ${office.region} Vicinage</h3><p><strong>Phone:</strong> <a href="tel:${office.phone.replace(/[^0-9+]/g,"")}">${office.phone}</a></p><p><strong>Email:</strong> <a href="mailto:${office.email}">${office.email}</a></p><p><strong>Address:</strong> ${office.address}</p><p><a href="${office.url}" target="_blank" rel="noopener">Visit the official NJ Courts office page ↗</a></p><p class="small">Ombudsman staff can provide court-process information, explain forms and procedures, and refer you to resources. They cannot give legal advice, choose a ground for you, or represent you.</p></div>`;
+ html+=`<div class="disclaimer"><h3>Important disclaimer</h3><p>This website is for general educational information only and is not legal advice. It does not create an attorney-client relationship, evaluate evidence, determine eligibility, or guarantee that a court will grant a divorce. The grounds listed are in N.J.S.A. 2A:34-2; each has legal elements and may require evidence. Laws, procedures, and contact details may change. Before filing or choosing a ground, consider speaking with a New Jersey family-law attorney or a free/low-cost legal service. The Ombudsman is a procedural resource, not your lawyer.</p><p><strong>Official resources:</strong> <a href="https://www.njcourts.gov/self-help/divorce" target="_blank" rel="noopener">NJ Courts divorce self-help page</a> · <a href="https://lis.njleg.state.nj.us/nxt/gateway.dll/statutes/1/112/1061" target="_blank" rel="noopener">N.J.S.A. 2A:34-2</a> · <a href="https://www.njcourts.gov/courts/ombudsman" target="_blank" rel="noopener">NJ Courts Ombudsman directory</a></p></div><div class="actions"><button class="secondary" id="restart">Start over</button><button class="primary" onclick="window.print()">Print / Save results</button></div>`;
+ app.innerHTML=html;document.getElementById("restart").onclick=()=>{index=0;Object.keys(answers).forEach(k=>delete answers[k]);render();window.scrollTo(0,0)};
+ window.scrollTo(0,0);
+}
+render();
+
+// Source-grounded FAQ chat assistant. This is a local guide navigator, not a generative AI service.
+const divorceGuideAnswers = [
+ {keys:['irreconcilable','no fault','no-fault','six months','differences'],answer:'The guide describes two no-fault grounds: irreconcilable differences for six months or more, or living separately in different residences for at least 18 consecutive months with no reasonable prospect of getting back together. For irreconcilable differences, it also describes a 12-month New Jersey residency requirement immediately before filing. The guide explains that no-fault divorce does not require proving either spouse caused the marriage to end.',pages:'19–20'},
+ {keys:['grounds','fault','desertion','cruelty','adultery','reason for divorce'],answer:'The guide discusses no-fault divorce based on irreconcilable differences or separation, and fault-based grounds including desertion and extreme cruelty. It says this manual’s self-help forms cover irreconcilable differences, separation, desertion, and extreme cruelty. Other fault grounds are discussed more briefly. Which ground applies depends on the facts and legal requirements.',pages:'19–20'},
+ {keys:['how do i file','filing','start divorce','complaint','forms','paperwork'],answer:'The guide recommends gathering marriage-related court orders and documents, financial information, and other records; deciding what you want addressed (such as support, property, debt, name change, custody, parenting time, and child support); then preparing and reviewing the required forms before filing. The complaint chapter explains the forms and filing process. Court forms and instructions can change, so compare the manual with current NJ Judiciary forms.',pages:'5–9, 21–35'},
+ {keys:['where file','which county','file complaint','county court'],answer:'The guide says the correct county for filing depends on the New Jersey Court Rules and on when and where the cause of action arose and where the parties live. It includes a county-by-county filing appendix. Because venue can depend on specific facts, check the current court rules or ask the Family Division/ombudsman before filing.',pages:'32–33, 112–113'},
+ {keys:['fee','cost','filing fee','waiver','cannot afford','afford'],answer:'The guide describes a filing fee and explains that a person who cannot afford the fees may ask the court to waive them using the Request for Waiver of Fees and Supporting Certification (Form 4) and Order Waiving Fees (Form 5). The dollar amount printed in this 2019 guide is historical and may be outdated; verify the current fee with the court before paying.',pages:'33, 35'},
+ {keys:['serve','service','deliver papers','spouse papers','summons'],answer:'After the complaint is filed, the defendant must be served with the complaint and summons, and proof of service must be provided to the court. The guide describes personal service (generally through the sheriff), mail in certain cooperative situations, and court-approved alternate service when the defendant’s address is unknown. It warns that timing matters and that the case may be dismissed if service is not completed within the required period.',pages:'39–54'},
+ {keys:['address unknown','cannot find','don’t know where','dont know where','publication','special agent'],answer:'If you cannot locate the defendant, the guide describes making diligent inquiries first. If the address remains unknown, you may need to ask the court for permission for substituted service on a special agent or service by publication. It treats this as a complicated process and gives step-by-step instructions and forms.',pages:'49–54'},
+ {keys:['child custody','custody','parenting time','visitation','parenting'],answer:'The guide explains that custody and parenting-time arrangements are addressed as part of the divorce. It discusses legal and physical custody and says visitation/parenting-time decisions are based on the child’s best interests. It recommends legal help in situations involving disagreement about physical custody or domestic violence.',pages:'8, 27–29, 89–90'},
+ {keys:['child support','support for child'],answer:'The guide says both parents have a duty to financially support their children. It explains that New Jersey Child Support Guidelines are used and that the amount depends on factors including the parents’ incomes and the number of children. The guide also discusses health insurance and child-care expenses as part of support considerations.',pages:'8, 29'},
+ {keys:['alimony','spousal support','maintenance'],answer:'The guide identifies several types of alimony: open durational, limited duration, rehabilitative, and reimbursement alimony. It explains that support is one of the issues a person may ask the court to address in the divorce. Whether alimony is appropriate or in what amount depends on the facts; the guide recommends getting legal advice when seeking alimony.',pages:'7, 23–24'},
+ {keys:['property','house','assets','equitable distribution','divide belongings','division of property'],answer:'The guide uses the term “equitable distribution” for dividing marital property. It says the court identifies what property is subject to division, determines its value, and decides how it will be divided. It lists examples that may include real estate, personal property, severance pay, pensions, and certain awards. It also discusses marital debt separately. This does not mean every item is automatically split equally.',pages:'7, 24–26'},
+ {keys:['debt','credit card','loans'],answer:'The guide explains that equitable distribution can apply to marital debt as well as property. The court determines which debts are subject to division and how much each party will be responsible for. It recommends consulting a lawyer if either spouse has significant debt.',pages:'25–26'},
+ {keys:['name change','maiden name','former name'],answer:'The guide identifies taking back a former name or changing a name as relief that can be requested in the divorce. It discusses the request in the complaint chapter and includes it among the matters that may be addressed in the final judgment.',pages:'7, 27, 95'},
+ {keys:['spouse does not respond','no response','default','ignores papers'],answer:'The guide has a separate process for seeking a default judgment when the defendant does not respond. It describes requesting entry of default, notifying the defendant, obtaining a hearing date, preparing the required papers, and attending the default divorce hearing. A default is not automatic; the required steps and notices still matter.',pages:'75–84'},
+ {keys:['respond','answer','counterclaim','i was served','served me'],answer:'If you are the defendant, the guide discusses filing an appearance, an answer, and possibly a counterclaim. It also lists other documents that may need to accompany those filings and explains how the plaintiff can respond to a counterclaim. Pay close attention to the response deadline stated in the summons and current court rules.',pages:'65–70'},
+ {keys:['uncontested','agree','settlement','both agree'],answer:'The guide describes an uncontested divorce as one in which there are no contested issues. It explains preparing for the hearing, bringing documents, preparing a proposed consent order/final judgment, and what to expect at the hearing. Even when spouses agree, the divorce is not final until the court enters a final judgment.',pages:'91–93'},
+ {keys:['contested','trial','disagree','mediation'],answer:'For contested cases, the guide discusses case management, discovery, mediation and settlement programs, preparing for trial, witnesses, documents, and the final judgment. It also describes mediation options for custody/parenting time and economic issues. Consider getting an attorney if important issues are disputed.',pages:'87–95'},
+ {keys:['lawyer','attorney','legal help','free lawyer','legal services','low income'],answer:'The guide recommends getting legal advice in situations such as domestic violence, disputed physical custody, significant real estate or personal property, seeking alimony, large pensions, personal-injury claims, public-benefit concerns, or a spouse overseas or in the military. It lists Legal Services of New Jersey and a statewide hotline at 1-888-576-5529, and explains lawyer-referral options. Confirm current eligibility and contact details.',pages:'2–4, 115–117'},
+ {keys:['domestic violence','abuse','unsafe','safety'],answer:'The guide strongly recommends legal help when there is a history of domestic violence and cautions that violence may increase or restart around the time a divorce is filed. If you are in immediate danger, call 911. For a safety plan or protection resources, contact a local domestic-violence service; do not rely on this chatbot for emergency help.',pages:'2, 20'},
+ {keys:['after divorce','final judgment','after judgment','finished divorce'],answer:'The guide’s final chapter discusses practical steps after the final judgment of divorce, including reviewing the judgment and taking steps related to matters decided in the case. It also includes a conclusion and reminder section. The exact steps depend on the orders entered in your case.',pages:'101–103'}
+];
+const chatLog=document.getElementById('chatLog');
+function addChatMessage(text,who,pages){
+ const el=document.createElement('div');el.className='chat-message '+who;el.append(document.createTextNode(text));
+ const cite=document.createElement('span');cite.className='chat-cite';cite.textContent='Source: Divorce in New Jersey: A Self-Help Guide, printed page'+(pages.includes(',')||pages.includes('–')?'s ':' ')+pages+'.';el.append(cite);
+ const warning=document.createElement('span');warning.className='chat-warning';warning.textContent='Disclaimer: This information is not legal advice. The guide is a 2019 publication and may be outdated. It does not replace advice from a New Jersey attorney.';el.append(warning);
+ chatLog.append(el);chatLog.scrollTop=chatLog.scrollHeight;
+}
+function answerDivorceQuestion(question){
+ const q=question.toLowerCase().replace(/[^a-z0-9\s-]/g,' ');
+ let best=null,bestScore=0;
+ for(const item of divorceGuideAnswers){let score=0;for(const key of item.keys){if(q.includes(key))score+=Math.max(1,key.split(' ').length);}if(score>bestScore){bestScore=score;best=item;}}
+ if(!best||bestScore===0){addChatMessage('I could not find a clear answer to that question in this guide. Try asking about filing, grounds for divorce, service of papers, custody, child support, alimony, property or debt, default, or legal help. The guide may not cover every situation, and I will not guess.', 'bot','1');return;}
+ addChatMessage(best.answer,'bot',best.pages);
+}
+document.getElementById('chatForm').addEventListener('submit',function(e){e.preventDefault();const input=document.getElementById('chatQuestion');const question=input.value.trim();if(!question)return;addChatMessage(question,'user','1');answerDivorceQuestion(question);input.value='';input.focus();});
+document.querySelectorAll('[data-question]').forEach(button=>button.addEventListener('click',()=>{const question=button.getAttribute('data-question');addChatMessage(question,'user','1');answerDivorceQuestion(question);}));
+
+</script>
+</body></html>
